@@ -21,5 +21,5 @@ def load_pretrained_projector_pipeline(direction, device="cpu"):
     else:
         raise ValueError("Direction must be either 'p2e' (predicted 2 experimental)"
                          " or 'e2p' (experimental 2 predicted).")
-    state_dict_path = importlib_resources.files("cmmrt.data.metalearned_projections").joinpath(model_name)
+    state_dict_path = importlib_resources.files("cmmrt.data.metalearned_projectors").joinpath(model_name)
     return _load_projector_pipeline_from(state_dict_path, 'constant', 'poly', device)

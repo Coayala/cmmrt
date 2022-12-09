@@ -21,9 +21,9 @@ endif
 
 ## Install Python Dependencies and cmmrt package
 install: 
-	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel
+	$(PYTHON_INTERPRETER) -m pip install -U pip setuptools wheel --user
 	# $(PYTHON_INTERPRETER) -m pip install -r requirements.txt
-	$(PYTHON_INTERPRETER) setup.py install
+	$(PYTHON_INTERPRETER) setup.py install --user
 
 ## Uninstall cmmrt package
 uninstall:

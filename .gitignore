@@ -1,6 +1,8 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+cmmrt.egg-info/
+notebooks/sdfs/
 
 # C extensions
 *.so

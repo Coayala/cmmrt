@@ -8,6 +8,7 @@ setup(
     author='CEU',
     license='MIT',
     install_requires=[
+        "scipy==1.8.1",
         "numpy>=1.19.2",
         "optuna>=2.8.0",
         "catboost>=0.25.1",
